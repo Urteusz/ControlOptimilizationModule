@@ -1,10 +1,10 @@
-package com.szebi.controloptimilizationmodule;
+package com.szebi.optimization;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ControlOptimilizationModuleApplicationTests {
+class optimizationTests {
 
     @Test
     void contextLoads() {
