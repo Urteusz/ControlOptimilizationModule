@@ -1,6 +1,10 @@
 package com.szebi.optimization.service;
 
 import com.szebi.optimization.model.*;
+import com.szebi.optimization.model.entity.Device;
+import com.szebi.optimization.model.entity.HeatingDevice;
+import com.szebi.optimization.model.entity.LightingDevice;
+import com.szebi.optimization.model.entity.VentilationDevice;
 import com.szebi.optimization.repository.DeviceRepository;
 import org.springframework.stereotype.Service;
 

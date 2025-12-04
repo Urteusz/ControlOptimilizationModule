@@ -1,4 +1,4 @@
-package com.szebi.optimization.model;
+package com.szebi.optimization.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

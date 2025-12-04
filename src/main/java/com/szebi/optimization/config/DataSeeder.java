@@ -1,6 +1,6 @@
 package com.szebi.optimization.config;
 
-import com.szebi.optimization.model.*;
+import com.szebi.optimization.model.entity.*;
 import com.szebi.optimization.repository.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

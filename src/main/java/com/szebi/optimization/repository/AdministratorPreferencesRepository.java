@@ -1,6 +1,6 @@
 package com.szebi.optimization.repository;
 
-import com.szebi.optimization.model.AdministratorPreferences;
+import com.szebi.optimization.model.entity.AdministratorPreferences;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

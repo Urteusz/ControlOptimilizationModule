@@ -1,8 +1,8 @@
 package com.szebi.optimization.controller;
 
-import com.szebi.optimization.model.AdministratorPreferences;
-import com.szebi.optimization.model.Device;
-import com.szebi.optimization.model.UserPreferences;
+import com.szebi.optimization.model.entity.AdministratorPreferences;
+import com.szebi.optimization.model.entity.Device;
+import com.szebi.optimization.model.entity.UserPreferences;
 import com.szebi.optimization.service.AdministratorPreferencesService;
 import com.szebi.optimization.service.DeviceControlService;
 import com.szebi.optimization.service.OptimizationService;

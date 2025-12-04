@@ -1,5 +1,6 @@
-package com.szebi.optimization.model;
+package com.szebi.optimization.model.entity;
 
+import com.szebi.optimization.model.statusState;
 import jakarta.persistence.*;
 
 @Entity

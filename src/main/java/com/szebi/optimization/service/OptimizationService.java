@@ -1,9 +1,8 @@
 package com.szebi.optimization.service;
 
-import com.szebi.optimization.model.*;
+import com.szebi.optimization.model.entity.*;
 import org.springframework.stereotype.Service;
 import java.util.List;
-import java.util.OptionalDouble;
 
 @Service
 public class OptimizationService {

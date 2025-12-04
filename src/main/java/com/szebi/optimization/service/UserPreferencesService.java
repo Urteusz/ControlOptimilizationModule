@@ -1,6 +1,6 @@
 package com.szebi.optimization.service;
 
-import com.szebi.optimization.model.UserPreferences;
+import com.szebi.optimization.model.entity.UserPreferences;
 import com.szebi.optimization.repository.UserPreferencesRepository;
 import org.springframework.stereotype.Service;
 

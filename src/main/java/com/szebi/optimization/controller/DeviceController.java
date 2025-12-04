@@ -1,6 +1,6 @@
 package com.szebi.optimization.controller;
 
-import com.szebi.optimization.model.Device;
+import com.szebi.optimization.model.entity.Device;
 import com.szebi.optimization.model.statusState;
 import com.szebi.optimization.service.DeviceControlService;
 import org.springframework.http.ResponseEntity;
