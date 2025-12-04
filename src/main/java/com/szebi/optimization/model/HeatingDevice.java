@@ -4,17 +4,22 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class HeatingDevice extends Device {
-    private double temperatureSetting;
+    private double temperature;
 
-    public double getTemperatureSetting() {
-        return temperatureSetting;
+    public double getTemperature() {
+        return temperature;
     }
 
-    public void setTemperatureSetting(double temperatureSetting) {
-        this.temperatureSetting = temperatureSetting;
+    public void setTemperature(double temperature) {
+        this.temperature = temperature;
     }
 
     public HeatingDevice() {
         super();
+    }
+
+    public HeatingDevice(String name, Place place, double powerConsumption, double temperature) {
+        super(name, place, powerConsumption);
+        this.temperature = temperature;
     }
 }

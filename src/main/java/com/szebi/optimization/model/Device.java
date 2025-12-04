@@ -1,9 +1,6 @@
 package com.szebi.optimization.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Device {
@@ -13,18 +10,28 @@ public class Device {
     private Long id;
 
     private String name;
-    private String place;
-    private boolean status;
+    @ManyToOne
+    @JoinColumn(name = "device_place_id")
+    private Place devicePlace;
+    private statusState status;
     private double powerConsumption;
 
 
     public Device() {}
 
-    public Device(String name, String place, double powerConsumption) {
+    public Device(String name, Place place, double powerConsumption) {
         this.name = name;
-        this.place = place;
-        this.status = false;
+        this.devicePlace = place;
+        this.status = statusState.OFF;
         this.powerConsumption = powerConsumption;
+    }
+
+    public Place getDevicePlace() {
+        return devicePlace;
+    }
+
+    public void setDevicePlace(Place devicePlace) {
+        this.devicePlace = devicePlace;
     }
 
     public Long getId() {
@@ -39,19 +46,12 @@ public class Device {
         this.name = name;
     }
 
-    public String getPlace() {
-        return place;
-    }
 
-    public void setPlace(String place) {
-        this.place = place;
-    }
-
-    public boolean isStatus() {
+    public statusState getStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(statusState status) {
         this.status = status;
     }
 

@@ -3,17 +3,8 @@ package com.szebi.optimization.model;
 import jakarta.persistence.Entity;
 
 @Entity
-public class ClimateDevice extends Device {
-    private double temperature;
+public class VentilationDevice extends Device {
     private int airFlowRate;
-
-    public double getTemperature() {
-        return temperature;
-    }
-
-    public void setTemperature(double temperature) {
-        this.temperature = temperature;
-    }
 
     public int getAirFlowRate() {
         return airFlowRate;
@@ -23,7 +14,7 @@ public class ClimateDevice extends Device {
         this.airFlowRate = airFlowRate;
     }
 
-    public ClimateDevice() {
+    public VentilationDevice() {
         super();
     }
 }
